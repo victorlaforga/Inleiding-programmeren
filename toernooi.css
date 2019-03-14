@@ -1,0 +1,158 @@
+.teams,
+p {
+    background-color: red;
+    font-family: sans-serif;
+    padding: 10px;
+    color: blue;
+    margin: 4px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-color: white
+}
+
+body {
+    text-align: center;
+    background-image: url("images/achtergrond%20wk.png");
+    opacity
+}
+
+h1 {
+    color: blue;
+    background-color: aliceblue;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: sans-serif;
+    border-style: groove;
+    border-radius: 10px;
+}
+
+.knop {
+    color: black;
+    background-color: skyblue;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 4px;
+    font-size: 14px;
+
+
+
+}
+
+#kiesTeampie,
+#kiesTeampie2,
+h2 {
+    color: cornflowerblue;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    font-size: 29px;
+}
+
+img {
+    width: 80px
+}
+
+
+
+.vraag {
+    float: inherit;
+    display: block;
+
+}
+
+#landen {
+    color: deepskyblue;
+    font-size: 35px;
+}
+
+/* css van hello world opdracht 1 animatie */
+
+@-webkit-keyframes turn-off {
+    0% {
+        -webkit-transform: scale(1, 1) translate3d(0, 0, 0);
+        transform: scale(1, 1) translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    25% {
+        -webkit-transform: scale(1, 0.09) translate3d(0, 0, 0);
+        transform: scale(1, 0.09) translate3d(0, 0, 0);
+        opacity: 1;
+        background: lime;
+    }
+    50% {
+        -webkit-transform: scale(1, 0.01) translate3d(0, 0, 0);
+        transform: scale(1, 0.01) translate3d(0, 0, 0);
+    }
+    75% {
+        -webkit-transform: scale(0.1, 0.1) translate3d(0, 0, 0);
+        transform: scale(0.1, 0.1) translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: scale(0, 0) translate3d(0, 0, 0);
+        transform: scale(0, 0) translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+
+@keyframes turn-off {
+    0% {
+        -webkit-transform: scale(1, 1) translate3d(0, 0, 0);
+        transform: scale(1, 1) translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    25% {
+        -webkit-transform: scale(1, 0.09) translate3d(0, 0, 0);
+        transform: scale(1, 0.09) translate3d(0, 0, 0);
+        opacity: 1;
+        background: lime;
+    }
+    50% {
+        -webkit-transform: scale(1, 0.01) translate3d(0, 0, 0);
+        transform: scale(1, 0.01) translate3d(0, 0, 0);
+    }
+    75% {
+        -webkit-transform: scale(0.1, 0.1) translate3d(0, 0, 0);
+        transform: scale(0.1, 0.1) translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: scale(0, 0) translate3d(0, 0, 0);
+        transform: scale(0, 0) translate3d(0, 0, 0);
+    }
+}
+
+.trigger_form_animation {
+    -webkit-animation: turn-off 0.5s ease-out;
+    animation: turn-off 0.5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.trigger_h1_animation {
+    -webkit-animation: typing 2s steps(14, end), blink-caret .2s step-end infinite alternate;
+    animation: typing 2s steps(14, end), blink-caret .2s step-end infinite alternate;
+}
